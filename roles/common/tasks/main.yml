@@ -1,0 +1,11 @@
+
+---
+- hosts: all
+  remote_user: root
+  order: reverse_inventory
+  gather_facts: False
+  tasks:
+    - name: testing connection to the node server
+      ping:
+      remote_user: root
+...

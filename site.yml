@@ -1,0 +1,10 @@
+# this is to see how roles work in abnsible
+- name: test Connection to all the nodes available
+  hosts: all
+  roles:
+   - commom
+
+-name: install httpd service on the web server
+ hosts: nodes
+ roles:
+  - web
